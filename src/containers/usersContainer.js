@@ -1,8 +1,8 @@
 import React from 'react';
-import { connect } from 'react-redux'
-import { fetchUsers } from '../actions/fetchUsers';
-import UsersForm from '../components/UsersForm';
+import {connect} from 'react-redux'
+import {fetchUsers} from '../actions/fetchUsers';
 import Users from '../components/Users';
+import UsersForm from '../components/UsersForm';
 
 
 class UsersContainer extends React.Component {
@@ -24,9 +24,9 @@ class UsersContainer extends React.Component {
 }
 
 const mapStateToProps =  state => {
-  return{
+  return {
     users: state.users
   }
 }
 
-export default connect(mapStateToProps, {fetchUsers})(UsersContainer);
+export default connect(mapStateToProps, {fetchUsers})(UsersContainer)
