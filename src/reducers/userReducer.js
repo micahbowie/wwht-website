@@ -1,5 +1,5 @@
 export default function userReducer(state = {users: []}, action) {
-debugger;
+  debugger;
   switch(action.type) {
     case "FECTH_USERS":
       return state
