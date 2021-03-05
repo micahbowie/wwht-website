@@ -23,7 +23,7 @@ class TermsContainer extends React.Component {
 
 const mapStateToProps =  state => {
   return {
-    terms: state.terms
+    terms: state.termsReducer.terms
   }
 }
 
