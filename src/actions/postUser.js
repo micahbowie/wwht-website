@@ -5,5 +5,7 @@ export function postUser(state) {
       method: 'POST',
       body: JSON.stringify(state)
     })
+    .then(resp => resp.json())
+    .then(user => dispatch({ type: 'POST_USER', payload: user }))
   }
 }
