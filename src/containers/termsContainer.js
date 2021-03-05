@@ -14,7 +14,7 @@ class TermsContainer extends React.Component {
     return (
       <div>
         TermContainer
-        <Terms/>
+        <Terms terms={this.props.terms}/>
       </div>
     )
   }
