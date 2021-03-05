@@ -14,6 +14,7 @@ class UserForm extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault()
     this.props.postUser(this.state)
+    this.setState({name: '', email: '' })
   }
 
   render () {
