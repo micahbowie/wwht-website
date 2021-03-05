@@ -1,16 +1,20 @@
 import React from 'react';
 import {connect} from 'react-redux'
+import {fetchTerms} from '../actions/fetchTerms';
+import Terms from '../components/Terms';
+
 
 class TermsContainer extends React.Component {
 
   componentDidMount() {
-
+    this.props.fetchTerms()
   }
 
   render () {
     return (
       <div>
         TermContainer
+        <Terms/>
       </div>
     )
   }
@@ -23,4 +27,4 @@ const mapStateToProps =  state => {
   }
 }
 
-export default connect(mapStateToProps)(TermsContainer)
+export default connect(mapStateToProps, {fetchTerms})(TermsContainer)
