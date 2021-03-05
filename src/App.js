@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
-// import { fetchUsers } from './actions/fetchUsers';
 import UsersContainer from './containers/usersContainer'
+import TermsContainer from './containers/termsContainer'
 
 
 class App extends React.Component{
@@ -9,6 +9,7 @@ class App extends React.Component{
     return (
       <div className="App">
         <UsersContainer/>
+        <TermsContainer/>
       </div>
     );
 
