@@ -14,8 +14,8 @@ class UsersContainer extends React.Component {
   render () {
     return (
       <div>
-        User Container
         <UsersForm/>
+        <br/>
         <Users users={this.props.users}/>
       </div>
     )
