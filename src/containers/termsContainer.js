@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux'
+import {Route} from 'react-router-dom'
 import {fetchTerms} from '../actions/fetchTerms';
 import Terms from '../components/Terms';
 
@@ -13,8 +14,7 @@ class TermsContainer extends React.Component {
   render () {
     return (
       <div>
-        TermContainer
-        <Terms terms={this.props.terms}/>
+         <Route path='/terms' render={() => <Terms terms={this.props.terms}/>}/>
       </div>
     )
   }
