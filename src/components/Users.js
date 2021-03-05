@@ -1,11 +1,11 @@
 import React from 'react';
-
+import User from "../components/User"
 
 const Users = (props) => {
   return (
     <div>
     {props.users.map(user =>
-      <li key={user.id}>{user.name} - {user.email}</li>
+      <div key={user.id}><User user={user}/></div>
     )}
     </div>
   )
