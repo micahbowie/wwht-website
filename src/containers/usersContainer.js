@@ -16,7 +16,7 @@ class UsersContainer extends React.Component {
       <div>
         User Container
         <UsersForm/>
-        <Users/>
+        <Users users={this.props.users}/>
       </div>
     )
   }
