@@ -1,10 +1,10 @@
 import React from 'react';
 
 const User = (props) => {
-console.log(props);
+  let user = props.users[props.match.params.id-1]
   return (
     <li>
-      {props.user.name} - {props.user.email}
+      { user ? user.name : null} - {user ? user.email : null}
     </li>
   )
 

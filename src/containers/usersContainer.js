@@ -4,6 +4,7 @@ import {Route} from 'react-router-dom'
 import {fetchUsers} from '../actions/fetchUsers';
 import Users from '../components/Users';
 import UsersForm from '../components/UsersForm';
+import User from '../components/User';
 
 
 class UsersContainer extends React.Component {
@@ -16,7 +17,8 @@ class UsersContainer extends React.Component {
     return (
       <div>
         <Route exact path='/users/new' component={UsersForm}/>
-        <Route exact path='/users' render={() => <Users users={this.props.users}/>}/>
+        <Route path='/users/:id' render={(routerProps) => <User {...routerProps}users={this.props.users}/>}/>
+        <Route exact path='/users' render={(routerProps) => <Users {...routerProps} users={this.props.users}/>}/>
       </div>
     )
   }
