@@ -15,8 +15,8 @@ class UsersContainer extends React.Component {
   render () {
     return (
       <div>
-        <Route path='/users/new' component={UsersForm}/>
-        <Route path='/users' render={() => <Users users={this.props.users}/>}/>
+        <Route exact path='/users/new' component={UsersForm}/>
+        <Route exact path='/users' render={() => <Users users={this.props.users}/>}/>
       </div>
     )
   }

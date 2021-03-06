@@ -14,7 +14,7 @@ class TermsContainer extends React.Component {
   render () {
     return (
       <div>
-         <Route path='/terms' render={() => <Terms terms={this.props.terms}/>}/>
+         <Route exact path='/terms' render={() => <Terms terms={this.props.terms}/>}/>
       </div>
     )
   }

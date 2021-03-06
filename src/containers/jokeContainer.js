@@ -13,7 +13,7 @@ class JokeContainer extends React.Component {
   render () {
     return(
       <div>
-        <Route path='/joke' render={() => <Joke joke={this.props.joke}/>}/>
+        <Route exact path='/' render={() => <Joke joke={this.props.joke}/>}/>
       </div>
     )
   }
