@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import UsersContainer from './containers/usersContainer'
 import TermsContainer from './containers/termsContainer'
 import JokeContainer from './containers/jokeContainer'
+import ListsContainer from './containers/listsContainer'
+
 
 class App extends React.Component{
   render() {
@@ -11,6 +13,7 @@ class App extends React.Component{
         <UsersContainer/>
         <TermsContainer/>
         <JokeContainer/>
+        <ListsContainer/>
       </div>
     );
 
