@@ -1,8 +1,9 @@
 import React from 'react';
+import {Route, Link} from 'react-router-dom'
 
 const User = (props) => {
   let user = props.users[props.match.params.id-1]
-  // let userList = user.lists
+  let userList = user ? user.lists : null
 
   return (
     <div>
@@ -14,7 +15,11 @@ const User = (props) => {
       </h5>
       <h5>Here are your lists: </h5>
       <ul>
-  list
+      { userList ? userList.map (list =>
+        <li>
+          <Link to={`/lists/${list.id}`}><li>{list.name}</li></Link>
+        </li>
+    ) : null}
       </ul>
     </div>
   )
