@@ -5,7 +5,6 @@ import TermsContainer from './containers/termsContainer'
 import JokeContainer from './containers/jokeContainer'
 import ListsContainer from './containers/listsContainer'
 
-
 class App extends React.Component{
   render() {
     return (

@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {postUser} from '../actions/postUser';
+
 class UserForm extends React.Component {
 
   state ={name: '', email: '' }
