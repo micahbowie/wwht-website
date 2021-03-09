@@ -4,6 +4,8 @@ import UsersContainer from './containers/usersContainer'
 import TermsContainer from './containers/termsContainer'
 import JokeContainer from './containers/jokeContainer'
 import ListsContainer from './containers/listsContainer'
+import SignupContainer from './containers/SignupContainer'
+
 
 class App extends React.Component{
   render() {
@@ -13,6 +15,7 @@ class App extends React.Component{
         <TermsContainer/>
         <JokeContainer/>
         <ListsContainer/>
+        <SignupContainer/>
       </div>
     );
 
