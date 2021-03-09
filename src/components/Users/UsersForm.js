@@ -3,8 +3,14 @@ import {connect} from 'react-redux';
 import {postUser} from '../../actions/postUser';
 
 class UserForm extends React.Component {
-
-  state ={name: '', email: '' }
+  constructor(props){
+    super(props); {
+      this.state = {
+        name: '',
+        email: ''
+      }
+    }
+  }
 
   handleChange = (event) => {
     this.setState({
