@@ -8,7 +8,7 @@ class SignupContainer extends React.Component {
   render(){
     return(
       <div>
-        <Route exact path='/' render={() => <SignupPage/>}/>
+        <SignupPage/>
       </div>
     )
   }

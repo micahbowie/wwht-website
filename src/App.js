@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
+import {Route} from 'react-router-dom'
 import UsersContainer from './containers/usersContainer'
 import TermsContainer from './containers/termsContainer'
 import JokeContainer from './containers/jokeContainer'
@@ -15,7 +16,7 @@ class App extends React.Component{
         <TermsContainer/>
         <JokeContainer/>
         <ListsContainer/>
-        <SignupContainer/>
+        <Route path="/signup" render={() => <SignupContainer/>} />
       </div>
     );
 
