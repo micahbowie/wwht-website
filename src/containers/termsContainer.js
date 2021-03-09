@@ -2,8 +2,8 @@ import React from 'react';
 import {connect} from 'react-redux'
 import {Route, Switch} from 'react-router-dom'
 import {fetchTerms} from '../actions/fetchTerms';
-import Terms from '../components/Terms';
-import Term from '../components/Term';
+import Terms from '../components/Terms/Terms';
+import Term from '../components/Terms/Term';
 
 class TermsContainer extends React.Component {
 

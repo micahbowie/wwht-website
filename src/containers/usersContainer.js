@@ -2,9 +2,9 @@ import React from 'react';
 import {connect} from 'react-redux'
 import {Route, Switch} from 'react-router-dom'
 import {fetchUsers} from '../actions/fetchUsers';
-import Users from '../components/Users';
-import UsersForm from '../components/UsersForm';
-import User from '../components/User';
+import Users from '../components/Users/Users';
+import UsersForm from '../components/Users/UsersForm';
+import User from '../components/Users/User';
 
 
 class UsersContainer extends React.Component {

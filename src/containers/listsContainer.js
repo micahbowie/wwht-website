@@ -2,8 +2,8 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Route} from 'react-router-dom'
 import {fetchLists} from '../actions/fetchLists';
-import List from '../components/List'
-import Lists from '../components/Lists'
+import List from '../components/Lists/List'
+import Lists from '../components/Lists/Lists'
 
 class ListsContainer extends React.Component {
   componentDidMount(){

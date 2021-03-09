@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route, Link} from 'react-router-dom'
-import UserList from '../components/UserList'
+import UserList from '../Lists/UserList'
 
 const User = (props) => {
   let user = props.users[props.match.params.id-1]

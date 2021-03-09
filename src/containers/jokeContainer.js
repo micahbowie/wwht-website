@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Route} from 'react-router-dom'
 import {fetchJoke} from '../actions/fetchJoke';
-import Joke from '../components/joke'
+import Joke from '../components/Jokes/joke'
 
 
 class JokeContainer extends React.Component {
