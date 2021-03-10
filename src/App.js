@@ -7,11 +7,14 @@ import JokeContainer from './containers/jokeContainer'
 import ListsContainer from './containers/listsContainer'
 import SignupContainer from './containers/SignupContainer'
 import SearchContainer from './containers/SearchContainer'
+import LoginContainer from './containers/LoginContainer'
+
 
 class App extends React.Component{
   render() {
     return (
       <div className="App">
+        <LoginContainer/>
         <SearchContainer/>
         <UsersContainer/>
         <TermsContainer/>
