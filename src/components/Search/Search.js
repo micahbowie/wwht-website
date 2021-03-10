@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 
 class Search extends React.Component {
   state = { searchTerm: ""}
@@ -12,7 +12,7 @@ class Search extends React.Component {
 
     return (
       <div>
-        <p>{term.name}</p>
+        <Link to={`/terms/${term.id}`}>{term.name}</Link>
       </div>
     )
 
@@ -32,8 +32,6 @@ class Search extends React.Component {
       <div>
         <input type="text" placeholder="Search..." onChange={this.handleChange}/>
         <div>
-          {console.log(filteredTerms)}
-          {console.log(searchTerm)}
           {searchTerm ?
           filteredTerms.map(term => {
             return this.renderTerm(term)
