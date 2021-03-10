@@ -6,12 +6,13 @@ import TermsContainer from './containers/termsContainer'
 import JokeContainer from './containers/jokeContainer'
 import ListsContainer from './containers/listsContainer'
 import SignupContainer from './containers/SignupContainer'
-
+import SearchContainer from './containers/SearchContainer'
 
 class App extends React.Component{
   render() {
     return (
       <div className="App">
+        <SearchContainer/>
         <UsersContainer/>
         <TermsContainer/>
         <JokeContainer/>
